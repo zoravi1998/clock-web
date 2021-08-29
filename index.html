@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CLOCK</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+        <style>
+            .clock-container{
+                position: relative;
+                margin: 100px auto;
+                display: flex;
+                background-image: url(clock.png);
+                justify-content: center;
+                height: 40vw;
+                width: 40vw;
+                background-size: 100%;
+            }
+            #dot{
+                position:absolute;
+                height: 4%;
+                width: 4%;
+                margin-top: 48%;
+                background-color:black;
+                border-radius: 50%;
+            }
+            #minute,#hour,#second{
+                position: absolute;
+                background-color: black;
+                border-radius: 15px;
+                transform-origin: 4% 89%;
+            }
+            #minute{
+                height: 35%;
+                width: 0.9%;
+                top: 20%;
+                background-color: red;
+            }
+            #hour{
+                height: 25%;
+                width: 0.9%;
+                top: 30%;
+            }
+            #second{
+                height: 50%;
+                width: 0.4%;
+                top: 6%;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clock-container">
+            <span id="dot"></span>
+            <span id="minute"></span>
+            <span id="hour"></span>
+            <span id ="second"></span>
+        </div>
+
+        <script src="clock.js"></script>
+    </body>
+</html>
